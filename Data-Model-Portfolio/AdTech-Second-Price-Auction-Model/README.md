@@ -8,4 +8,10 @@ After being hired by a major retailer to develop algorithms for an online ad auc
 
 Develop class architecture that models a typical second price auction, multiple bidder competitions, and Users with a probability to click on an ad. Build a model that maximizes immediate payoffs.
 
-Assume that you are one of many bidders, there are millions of auctions, and various collections of users on a given ad space.
+Assume that you are one of many bidders, there are millions of auctions, and various collections of users on a given ad space. 
+
+Additionally, you may NOT use machine learning.
+
+## Result:
+
+Placed in the top 10 ranks out of 130+ students.
