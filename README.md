@@ -14,6 +14,8 @@
 ## Completed Coursework:
 
 ### Masters in Data Science:
+- Statistics for Data Science
+- Fundamentals of Data Engineering
 - Python Programming for Data Science
 - Research Design
 
