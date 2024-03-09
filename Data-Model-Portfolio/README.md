@@ -1,1 +1,1 @@
-# Building Data Models for various datasets.
+# Various Neural Net implementations
