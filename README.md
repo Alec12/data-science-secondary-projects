@@ -5,7 +5,7 @@
 
 ## Education:
 
-### Masters in Data Science (Expected December 2024)
+### Masters in Data Science (Expected Completion: December 2024)
 - University of California, Berkeley
 
 ### B.A Economics, Minor Industrial Engineering and Operations Research (2018)
@@ -17,7 +17,7 @@
 - Statistics for Data Science
 - Fundamentals of Data Engineering
 - Python Programming for Data Science
-- Research Design
+- Research Design and Applications for Data and Analysis
 
 ### B.A Economics, Minor Industrial Engineering and Operations Research:
 - Machine Learning and Data Analysis
