@@ -53,7 +53,7 @@ Operationalization :
 
 During the exploratory analysis, I identified routes that fall below the average in terms of baggage purchase percentage but above the average in terms of the number of passengers. These routes are labeled as "Opportune Routes". Targeting these routes can enhance average baggage purchase conversions, uncovering a practical significance. By employing customer identification machine learning algorithms, companies can create promotional strategies aimed at high-willingness-to-buy individuals. This approach can boost baggage purchases and consequently baggage revenue margins, especially since these flight routes are underperforming compared to others. Additionally, statistical inference revealed that baggage purchases are not solely determined by high or low flight durations, indicating a more nuanced relationship that can be revealed through machine learning.
 
-(combined_plots.png)
+![](combined_plots.png)
 
 ### Predictive Model Development
 - Feature Selection
