@@ -1,9 +1,10 @@
 # Airlines Analysis (Oceania Region Dataset)
 
 ## Overview
-
+<blockquote>
 In this analysis, I aim to explore a dataset containing information about airline bookings in the Oceania region. The focus will be on understanding customer preferences regarding extra baggage options and creating a predictive model to forecast the number of bags purchased based on various parameters. By identifying flights that underperform in selling baggage options, this could help target poorly performing customer segments for the creation of effective marketing campaigns.
-
+- mention dataset and its sepcifications
+</blockquote>
 ## Research Question
 
 How can we use statistical methods to identify flights that are underperforming on selling baggage options, and how can we create a predictive model to forecast the number of bags purchased based on other parameters in the dataset?
@@ -27,8 +28,11 @@ How can we use statistical methods to identify flights that are underperforming 
 | flight_duration      | Total duration of flight (in hours)                       |
 | booking_complete     | Flag indicating if the customer completed the booking     |
 
-## Experimental Design
+Data pulled from : 
+Limitations?
 
+## Experimental Design
+- Indent some of these
 Data Cleaning and Preprocessing: Remove any missing or inconsistent data, and encode categorical variables.
 Exploratory Data Analysis (EDA): Analyze the distribution of variables, identify correlations, and explore patterns related to baggage options.
 Statistical Analysis: Conduct hypothesis testing or other statistical methods to identify flights underperforming on selling baggage options.
@@ -40,13 +44,16 @@ Interpretation: Interpret the results to identify key factors influencing baggag
 ## Analysis
 
 Through the use of statistical methods, we address : Do all flight paths have an equal distribution of baggage purchases. 
+
 Operationalization : 
 - Remove high-variance small sample flight routes, conduct analysis with remaining flights.
 - We remove added variance and create a binary target variable. Of course, this removes information from our analysis but we instead simplify the interpretation of our analysis.
 
-### Top flights that are underperforming
-- Count of flights for analysis
-- X-Y point plot of different flights (which quadrant seems to be underperforming on these)
+### Identifying Underperforming Flights
+
+During the exploratory analysis, I identified routes that fall below the average in terms of baggage purchase percentage but above the average in terms of the number of passengers. These routes are labeled as "Opportune Routes". Targeting these routes can enhance average baggage purchase conversions, uncovering a practical significance. By employing customer identification machine learning algorithms, companies can create promotional strategies aimed at high-willingness-to-buy individuals. This approach can boost baggage purchases and consequently baggage revenue margins, especially since these flight routes are underperforming compared to others. Additionally, statistical inference revealed that baggage purchases are not solely determined by high or low flight durations, indicating a more nuanced relationship that can be revealed through machine learning.
+
+(combined_plots.png)
 
 ### Predictive Model Development
 - Feature Selection
