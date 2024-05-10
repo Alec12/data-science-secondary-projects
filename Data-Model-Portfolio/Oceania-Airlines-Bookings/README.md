@@ -1,10 +1,10 @@
 # Airlines Analysis (Oceania Region Dataset)
 
 ## Overview
-<blockquote>
+
 In this analysis, I aim to explore a dataset containing information about airline bookings in the Oceania region. The focus will be on understanding customer preferences regarding extra baggage options and creating a predictive model to forecast the number of bags purchased based on various parameters. By identifying flights that underperform in selling baggage options, this could help target poorly performing customer segments for the creation of effective marketing campaigns.
 - mention dataset and its sepcifications
-</blockquote>
+
 ## Research Question
 
 How can we use statistical methods to identify flights that are underperforming on selling baggage options, and how can we create a predictive model to forecast the number of bags purchased based on other parameters in the dataset?
@@ -31,23 +31,34 @@ How can we use statistical methods to identify flights that are underperforming 
 Data pulled from : 
 Limitations?
 
-## Experimental Design
-- Indent some of these
-Data Cleaning and Preprocessing: Remove any missing or inconsistent data, and encode categorical variables.
+## Analysis Design
+
+With the availability of the Oceania airline dataset, I outline the steps taken 
+
+
 Exploratory Data Analysis (EDA): Analyze the distribution of variables, identify correlations, and explore patterns related to baggage options.
-Statistical Analysis: Conduct hypothesis testing or other statistical methods to identify flights underperforming on selling baggage options.
-Feature Selection: Select relevant features for building the predictive model.
+- Investigate underperforming routes in the Oceania region.
+- Statistical Analysis: Conduct hypothesis testing to experiment the simplicity of the relationship between baggage purchases and flight duration. This will help us understand the need for machine learning, or not.
+
 Model Development: Train predictive models such as regression, decision trees, or neural networks to forecast the number of bags purchased.
-Model Evaluation: Evaluate the performance of the models using appropriate metrics such as mean squared error or R-squared.
-Interpretation: Interpret the results to identify key factors influencing baggage purchases and flights that require targeted marketing campaigns.
+- Data Cleaning and Preprocessing: Remove any missing or inconsistent data, and encode categorical variables.
+- Feature Selection: Select relevant features for building the predictive model.
+- Model Evaluation: Evaluate the performance of the models using appropriate metrics such as mean squared error or R-squared.
+- Interpretation: Interpret the results to identify key factors influencing baggage purchases and flights that require targeted marketing campaigns.
 
-## Analysis
+## Analysis & Results
 
-Through the use of statistical methods, we address : Do all flight paths have an equal distribution of baggage purchases. 
+### Hypethesis Testing
+Through the use of statistical methods, we address : Do all flight paths have an equal distribution of baggage purchases. Our alternative hypothesis is that there is a difference in baggage purchases based on the flight duration. We assess at the a = 0.05 level.
 
 Operationalization : 
 - Remove high-variance small sample flight routes, conduct analysis with remaining flights.
 - We remove added variance and create a binary target variable. Of course, this removes information from our analysis but we instead simplify the interpretation of our analysis.
+- Employed a 2-sample T-Test for statistical inference. Our two groups are routes above and below the mean flight duration time. 
+
+Test Results : 
+- Given the ambiguity in the data collection steps for this Kaggle dataset, we cannot verify the IID assumption needed for the 2-sample T-test. Typically I would halt this investigation, but for this project, I will continue with the assumption that this dataset contains all flights from a limited period of time in the Oceania region. The only major violation in this case would be year over year discrepancies not accounted for. That is, however, outside the scope and we can move forward with these assumptions. Otherwise, the other assumptions for this T-Test are met (see exploratory_analysis.ipynb).
+- We conclude that there is a significant difference based on flight duration. This result rejects the null hypothesis. Practically, this helps with our understanding of the factors that influence a passenger to purchase baggage. While we can conduct a similar experiment for other factors, we assume that there is more complexity in a passenger's decision making that involve conditional distributions between factors. Therefore, I will employ more complex modeling through the use of machine learning to predict passengers that make baggage purchases.
 
 ### Identifying Underperforming Flights
 
