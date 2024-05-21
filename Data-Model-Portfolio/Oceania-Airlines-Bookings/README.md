@@ -67,11 +67,17 @@ During the exploratory analysis, I identified routes that fall below the average
 ![](combined_plots.png)
 
 ### Predictive Model Development
-- Feature Selection
-- Model Creation
-- Accuracy
+- With this dataset, we use the other parameters to predict a customer's purchase for extra baggage on their flight. This is a binary target, so it's important that we use three supervised classifier algorithms in our model creation. I have selected 3 notable classifiers, and the analysis is limited to this selection only: Logistic Regression, Random Forests Classifier, and LightGBM Classifier. 
 
+- The models is trained on 70% of the data, while 10% is reserved as a validation set, and 20% is reserved as the final test set. Each model is evaluated by accuracy of the predictions, however, I also take note of precision and recall metrics for a complete analysis. If you would like to see the detailed metrics, please see model_building.ipynb.
 
+- The baseline estimate is 67%, therefore a viable production-level model will need to exceed this estimate in order for it to be of any use to the company.
+
+![Accuracy Estimates on Test Set](model_accuracy_comparison_final_test_results.png)
 
 ## Conclusion
-- This could be used by companies to create better marketing campaigns in the sale pipeline. This model can identify customers that have a willingness to buy a bag but do not, and thus effectively market to increase baggage conversion rate.
+- LightGBM (Default) performs the best on the test set results, with 73% Accuracy. Compared to our baseline, this is a +6% accuracy improvement that can be utilized in production. By using this model, we can correctly identify 73% of customers that would want a baggage option with the given parameters. 
+
+- This can be really useful. Our model can select customers that would want extra baggage by the other dimensions. If these customers do not select extra baggage, one strategy could be to offer them promotions that may increase their likelihood of purchase a baggage option, thereby raising the bottomline of revenue! With AB Testing, this can be tested robustly, with a final revenue sizing estimation.
+
+- Furthermore, this type of analysis can be conducted for other parameters like Preferred Seating, In-Flight Meals, etc. We could even perform this type of anlaysis for specific routes or booking origins. This is the end of my analysis, please reach out if you have any further questions.
