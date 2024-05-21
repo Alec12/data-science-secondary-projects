@@ -67,7 +67,7 @@ During the exploratory analysis, I identified routes that fall below the average
 ![](combined_plots.png)
 
 ### Predictive Model Development
-- With this dataset, we use the other parameters to predict a customer's purchase for extra baggage on their flight. This is a binary target, so it's important that we use three supervised classifier algorithms in our model creation. I have selected 3 notable classifiers, and the analysis is limited to this selection only: Logistic Regression, Random Forests Classifier, and LightGBM Classifier. 
+- With this dataset, we use the other parameters to predict a customer's purchase for extra baggage on their flight. This is a binary target, so it's important that we use three supervised classifier algorithms in our model creation. I have selected 3 notable classifiers: Logistic Regression, Random Forests Classifier, and LightGBM Classifier. While the analysis is limited to these models, I also perform some hypertuning with the objective to improve model performances. These are denoted as 'HT' in the graphic below.
 
 - The models is trained on 70% of the data, while 10% is reserved as a validation set, and 20% is reserved as the final test set. Each model is evaluated by accuracy of the predictions, however, I also take note of precision and recall metrics for a complete analysis. If you would like to see the detailed metrics, please see model_building.ipynb.
 
