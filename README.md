@@ -1,4 +1,4 @@
-# Alec Naidoo - Data Science Portfolio
+# Alec Naidoo - Data Science Secondary Projects
 
 ## Contact:
 - Email: alecarnassi@gmail.com
